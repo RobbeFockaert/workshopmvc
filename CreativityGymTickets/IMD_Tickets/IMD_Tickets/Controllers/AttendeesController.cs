@@ -16,5 +16,11 @@ namespace IMD_Tickets.Controllers
             return View();
         }
 
+        public ActionResult Grant()
+        {
+            Models.AttendeeModel am = new Models.AttendeeModel();
+            ViewBag.attendee = am.selectAll();
+            return View();
+        }
     }
 }

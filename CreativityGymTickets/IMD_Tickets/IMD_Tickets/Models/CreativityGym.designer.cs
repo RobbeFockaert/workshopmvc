@@ -30,9 +30,9 @@ namespace IMD_Tickets.Models
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
-    partial void InsertPHP_Ticket(PHP_Ticket instance);
-    partial void UpdatePHP_Ticket(PHP_Ticket instance);
-    partial void DeletePHP_Ticket(PHP_Ticket instance);
+    partial void InsertTicket(Ticket instance);
+    partial void UpdateTicket(Ticket instance);
+    partial void DeleteTicket(Ticket instance);
     #endregion
 		
 		public CreativityGymDataContext() : 
@@ -65,17 +65,17 @@ namespace IMD_Tickets.Models
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<PHP_Ticket> PHP_Tickets
+		public System.Data.Linq.Table<Ticket> Tickets
 		{
 			get
 			{
-				return this.GetTable<PHP_Ticket>();
+				return this.GetTable<Ticket>();
 			}
 		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="IMM1094.PHP_Tickets")]
-	public partial class PHP_Ticket : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class Ticket : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -106,7 +106,7 @@ namespace IMD_Tickets.Models
     partial void OnusedChanged();
     #endregion
 		
-		public PHP_Ticket()
+		public Ticket()
 		{
 			OnCreated();
 		}

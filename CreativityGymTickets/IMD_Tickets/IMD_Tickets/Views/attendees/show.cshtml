@@ -3,3 +3,8 @@
 }
 
 <h2>show</h2>
+<select id="skill" name="user">
+ @foreach (var s in ViewBag.attendee){
+            <option value="@s.id">@s.skill</option>
+        }
+    </select>
