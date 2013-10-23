@@ -5,8 +5,7 @@ using System.Web;
 
 namespace IMD_Tickets.Models
 {
-    public class TicketModel
+    public class AttendeeModel
     {
-
     }
 }
